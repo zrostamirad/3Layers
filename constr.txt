@@ -1,0 +1,1 @@
+mssql+pyodbc://zahra:zahra@DESKTOP-S5PAQ60/DB3layers?driver=ODBC+Driver+18+for+SQL+Server&TrustServerCertificate=yes
