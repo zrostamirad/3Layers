@@ -3,7 +3,6 @@ from tkinter import ttk, messagebox
 from BLL.bl_personnel import bl_personnel
 from BE.personnel_cls import personnel
 
-
 class App(CTkFrame):
 
     def __init__(self, screen=None):
@@ -48,6 +47,7 @@ class App(CTkFrame):
         self.tbl.column("#1", width=50)
         self.tbl.heading("#1", text="سن")
         self.tbl.place(relx=0.35, rely=0.3)
+        self.LoadTable("personnel")
 
     def Register(self):
         if self.varName.get() == "":
@@ -64,9 +64,22 @@ class App(CTkFrame):
             n = bl_personnel()
             result = n.Add(object)
             print(result)
-            if result:
+            if result == True:
                 messagebox.showinfo("", "ثبت شد")
+                self.LoadTable("personnel")
             elif result == "2":
                 messagebox.showerror("", "کمتر از 18سال ثبت نمیشود")
             else:
                 messagebox.showerror("", "مشکل پیش آمده بعدا سعی کن...")
+
+    def LoadTable(self, obj):
+        self.ClearTable()
+        n = bl_personnel()
+        result = n.Read(obj=personnel)
+        for i in result:
+            self.tbl.insert('', "end", values=[i.age, i.family, i.name])
+
+    def ClearTable(self):
+        for i in self.tbl.get_children():
+            sel = (str(i),)
+            self.tbl.delete(sel)

@@ -24,7 +24,7 @@ class Ripository():
         try:
             return session.query(obj).all()
         except:
-            return False
+            return ()
 
     def Update(self, obj, id):
         try:

@@ -11,7 +11,11 @@ class bl_personnel():
             return "2"
 
     def Read(self, obj):
-        pass
+        try:
+            n = Ripository()
+            return n.Read(obj)
+        except:
+            return False
 
     def Update(self, obj, id):
         pass

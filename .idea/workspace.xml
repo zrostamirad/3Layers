@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26651dd0-669e-4e15-9082-7c55827ea8ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/3Layers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BE/dbcontext.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BE/personnel_cls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BLL/bl_personnel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAL/Repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PL/reg_form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constr.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setting.py" afterDir="false" />
+    <list default="true" id="26651dd0-669e-4e15-9082-7c55827ea8ec" name="Changes" comment="3 layer architecture&#10;Creating connections and completing additions in the database">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/bl_personnel.py" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/bl_personnel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/Repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/Repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PL/reg_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/PL/reg_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zrostamirad&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zrostamirad/3Layers.git&quot;,
+    &quot;accountId&quot;: &quot;38c8166b-ddc4-4adc-a8a1-053f37165bd5&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -49,7 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/My Project/py-file/LoginProject",
@@ -96,24 +98,38 @@
       <option name="presentableId" value="Default" />
       <updated>1717237805639</updated>
     </task>
+    <task id="LOCAL-00001" summary="3 layer architecture&#10;Creating connections and completing additions in the database">
+      <option name="closed" value="true" />
+      <created>1717370721205</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717370721205</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3 layer architecture&#10;Creating connections and completing additions in the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 layer architecture&#10;Creating connections and completing additions in the database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DAL/Repository.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DAL/Repository.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/PL/reg_form.py</url>
-          <line>64</line>
+          <line>66</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
